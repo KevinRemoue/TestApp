@@ -1,17 +1,19 @@
 @startuml
-node "Telephone"
+node "Smartphone"
 node "Serveur"
 [App_Name]
 [REST API]
+[Linux Debian Wheezy]
 [MySQL]
 [Android VX.X.X]
 interface "HTTPS"
 
-[App_Name] ..> Telephone
-[Android VX.X.X] ..> Telephone
-Telephone -> HTTPS
+[App_Name] ..> Smartphone
+[Android VX.X.X] ..> Smartphone
+Smartphone -> HTTPS
 HTTPS --> [REST API]
 [REST API] ..> Serveur
 [MySQL] ..> Serveur
+[Linux Debian Wheezy] ..> Serveur
 
 @enduml
