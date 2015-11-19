@@ -3,17 +3,19 @@ node "Smartphone"
 node "Serveur"
 [App_Name]
 [REST API]
-[Linux Debian Wheezy]
+[Linux Debian Wheezy 7.8]
+[Linux Kernel V4.1.7]
 [MySQL]
-[Android VX.X.X]
+[Android V4.0.3]
 interface "HTTPS"
 
 [App_Name] ..> Smartphone
-[Android VX.X.X] ..> Smartphone
+[Android V4.0.3] ..> Smartphone
 Smartphone -> HTTPS
 HTTPS --> [REST API]
 [REST API] ..> Serveur
 [MySQL] ..> Serveur
-[Linux Debian Wheezy] ..> Serveur
+[Linux Kernel V4.1.7] ..> Serveur
+[Linux Debian Wheezy 7.8] ..> Serveur
 
 @enduml
