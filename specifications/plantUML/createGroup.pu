@@ -1,0 +1,6 @@
+Android -> REST : HTTPS GET request : createGroup(GroupeId)
+REST -> REST : Interpretation de la requete
+REST -> DB : Requetes (tests existence etc...)
+DB --> REST : Requetes OK
+REST -> REST : Traitement requete
+REST --> Android : JSON response OK(GroupKey)

@@ -1,0 +1,6 @@
+Android -> REST : HTTPS GET request : seePlaceInfo(Place)
+REST -> REST : Interpretation de la requete
+REST -> DB : Requete(Place)
+DB --> REST : OK(Results)
+REST -> REST : Traitement requete
+REST --> Android : JSON response OK(Results)
